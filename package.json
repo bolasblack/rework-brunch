@@ -1,0 +1,17 @@
+{
+  "name": "rework-brunch",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "preinstall": "rm -rf lib && coffee --bare --output lib/ src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "css-whitespace": "~1.1.0",
+    "rework": "~0.18.3",
+    "rework-mixins": "~1.1.1"
+  }
+}
