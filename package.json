@@ -12,6 +12,8 @@
   "dependencies": {
     "css-whitespace": "~1.1.0",
     "rework": "~0.18.3",
-    "rework-mixins": "~1.1.1"
+    "rework-mixins": "~1.1.1",
+    "extend": "~1.2.1",
+    "rework-import": "git://github.com/bolasblack/rework-import"
   }
 }

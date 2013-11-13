@@ -4,9 +4,7 @@ Adds [Rework](https://github.com/visionmedia/rework) support to [brunch](http://
 
 ## Usage
 
-Install the plugin via npm with `npm install --save rework-brunch`.
-
-Or, add `"rework-brunch": "git+ssh://git@github.com:bolasblack/rework-brunch.git"` to your `package.json`.
+Add `"rework-brunch": "git+ssh://git@github.com:bolasblack/rework-brunch.git"` to your `package.json`.
 
 ### Options
 
@@ -14,11 +12,19 @@ Or, add `"rework-brunch": "git+ssh://git@github.com:bolasblack/rework-brunch.git
 config =
   plugins:
     rework:
-      whitespace: true         # default false, compile with css-whitespace
-      mixins: false            # default true, compile with rework-mixins
-      config: (css, rework) -> # custom configure
-        css.use(rework.prefixSelectors('.customselector'))
+      whitespace: false            # compile with css-whitespace
+      mixins: true                 # compile with plugin rework-mixins
+      extensions: ['re', 'rework'] # watched file extensions
+      import: true                 # compile with plugin rework-import
+      basedir: 'app/styles'        # file folder setting for plugin rework-import
+      config: (css, rework) ->     # custom configure
 ```
+
+## Links
+
+* [Rework](https://github.com/visionmedia/rework)
+* [rework-import](https://github.com/bolasblack/rework-import)
+* [rework-mixins](https://github.com/visionmedia/rework-mixins)
 
 ## License
 
