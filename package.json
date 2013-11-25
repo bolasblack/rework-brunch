@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "css-whitespace": "~1.1.0",
-    "rework": "~0.18.3",
+    "rework": "git://github.com/bolasblack/rework#200c6f37b50ade68153424d8c9902d1d9b01a734",
     "rework-mixins": "~1.1.1",
     "extend": "~1.2.1",
     "rework-import": "git://github.com/bolasblack/rework-import"
