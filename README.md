@@ -4,7 +4,7 @@ Adds [Rework](https://github.com/visionmedia/rework) support to [brunch](http://
 
 ## Usage
 
-Add `"rework-brunch": "git+ssh://git@github.com:bolasblack/rework-brunch.git"` to your `package.json`.
+Add `"rework-brunch": "git@github.com:bolasblack/rework-brunch.git"` to your `package.json` (in the "dependencies" section).
 
 ### Options
 
