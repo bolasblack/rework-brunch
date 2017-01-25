@@ -1,6 +1,10 @@
+> ## ⚠️ Important! ⚠️
+
+> [Rework] has no new releases [since Aug, 2014](https://github.com/reworkcss/rework/releases/tag/1.0.1). Use it on your own risk. We suggest you to use [PostCSS] with [postcss-brunch] instead of [Rework]. It's more stable, maintained and powerful solution. 
+
 # rework-brunch
 
-Adds [Rework](https://github.com/visionmedia/rework) support to [brunch](http://brunch.io).
+Adds [Rework] support to [brunch].
 
 ## Usage
 
@@ -8,16 +12,21 @@ Add `"rework-brunch": "git://github.com/bolasblack/rework-brunch.git"` to your `
 
 ### Options
 
-```coffeescript
-config =
-  plugins:
-    rework:
-      whitespace: false            # compile with css-whitespace
-      mixins: true                 # compile with plugin rework-mixins
-      extensions: ['re', 'rework'] # watched file extensions
-      import: true                 # compile with plugin rework-import
-      basedir: 'app/styles'        # file folder setting for plugin rework-import
-      config: (css, rework) ->     # custom configure
+```js
+module.exports = {
+  plugins: {
+    rework: {
+      whitespace: false,            // compile with css-whitespace
+      mixins: true,                 // compile with plugin rework-mixins
+      extensions: ['re', 'rework'], // watched file extensions
+      import: true,                 // compile with plugin rework-import
+      basedir: 'app/styles',        // file folder setting for plugin rework-import
+      config: (css, rework) => {
+        // custom configuration
+      }
+    }
+  }
+}
 ```
 
 ## Links
@@ -30,7 +39,7 @@ config =
 
 The MIT License (MIT)
 
-Copyright (c) 2012-2013 bolasblack (http://plafer.info)
+Copyright (c) 2012-2017 bolasblack (http://plafer.info)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -50,3 +59,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+<!-- References -->
+
+[rework]: https://github.com/reworkcss/rework
+[brunch]: http://brunch.io
+[postcss]: http://postcss.org/
+[postcss-brunch]: https://github.com/brunch/postcss-brunch
